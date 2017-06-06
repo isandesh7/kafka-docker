@@ -18,6 +18,7 @@ ENV PATH ${PATH}:${KAFKA_HOME}/bin
 ADD start-kafka.sh /usr/bin/start-kafka.sh
 ADD broker-list.sh /usr/bin/broker-list.sh
 ADD create-topics.sh /usr/bin/create-topics.sh
+ADD kafka-example /usr/bin/kafka-example
 # The scripts need to have executable permission
 RUN chmod a+x /usr/bin/start-kafka.sh && \
     chmod a+x /usr/bin/broker-list.sh && \
