@@ -33,5 +33,4 @@ if [[ -n $KAFKA_CREATE_TOPICS ]]; then
           JMX_PORT='' $KAFKA_HOME/bin/kafka-topics.sh --create --zookeeper $KAFKA_ZOOKEEPER_CONNECT --replication-factor ${topicConfig[2]} --partition ${topicConfig[1]} --topic "${topicConfig[0]}"
         fi
     done
-    kafka-example producer
 fi
